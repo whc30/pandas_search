@@ -29,7 +29,7 @@ def search(df,name,**kwargs):
     else:
         df_cols = [col for col in df.columns]
     if rus:
-        df_cols = [col.replace('_','') for col in df.columns]
+        df_cols = [col.replace('_','') for col in df_cols]
     
     mapping = dict(zip(df_cols,df_cols_orig)) #A mapping for referring back to the original
     
