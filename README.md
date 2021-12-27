@@ -2,6 +2,13 @@
 
 This is a simple package for searching the columns of Pandas DataFrames for key-words.
 
+## Installation
+
+The easiest way to install is by
+```
+pip install -e git+https://github.com/whc30/pdsearch#egg=pdsearch
+```
+
 ## Search function 
 ```python
 pdsearch.search(df,name,**kwargs)
@@ -18,7 +25,7 @@ Python list.
 
 ## Dependencies
 
-Depends only on Pandas, and should be version independent.
+Depends only on Pandas.
 
 ## Usage
 
