@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pdsearch
+Version: 0.0.1
+Summary: Search for Pandas dataframe columns
+Home-page: UNKNOWN
+Author: Will Clare
+License: UNKNOWN
+Keywords: python,pandas
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+Search Pandas dataframe columns for a specified name
+
