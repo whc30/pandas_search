@@ -6,7 +6,7 @@ LONG_DESCRIPTION = 'Search Pandas dataframe columns for a specified name'
 
 # Setting up
 setup(
-        name="pandas_search", 
+        name="pdsearch", 
         version=VERSION,
         author="Will Clare",
         description=DESCRIPTION,

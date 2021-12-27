@@ -4,7 +4,7 @@ This is a simple package for searching the columns of Pandas DataFrames for key-
 
 ## Search function 
 ```python
-pandas_search.search(df,name,**kwargs)
+pdsearch.search(df,name,**kwargs)
 ```
 #### **Arguments**
 - **df**: The ```pandas.DataFrame``` that you wish to search.
@@ -25,7 +25,7 @@ Depends only on Pandas, and should be version independent.
 This is best done with an example.
 ```python
 import pandas as pd
-from pandas_search import search
+from pdsearch import search
 ```
 
 

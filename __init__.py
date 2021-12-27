@@ -1,1 +1,1 @@
-from pandas_search import search
+from pdsearch import search
