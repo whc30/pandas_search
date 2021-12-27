@@ -16,6 +16,9 @@ pandas_search.search(df,name,**kwargs)
 #### **Returns**
 Python list.
 
+## Dependencies
+
+Depends only on Pandas, and should be version independent.
 
 ## Usage
 
