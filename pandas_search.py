@@ -1,10 +1,10 @@
 import pandas as pd
 
-#TODO - make output refer back to original rather than transformed values
 def search(df,name,**kwargs):
     '''Search the columns of a Pandas dataframe `df` for columnname `name`.
     Toggle case-sensitivity with `case` (default=False).
     Toggle removing underscores with `remove_us` (default=False).'''
+
     #Check input types
     if not isinstance(df,pd.DataFrame):
         raise TypeError("Expected type for `df` input is a Pandas.DataFrame, got {}".format(type(df)))
@@ -31,7 +31,7 @@ def search(df,name,**kwargs):
     if rus:
         df_cols = [col.replace('_','') for col in df.columns]
     
-    mapping = dict(zip(df_cols,df_cols_orig))
+    mapping = dict(zip(df_cols,df_cols_orig)) #A mapping for referring back to the original
     
     cols = [mapping[col] for col in df_cols if name in col]
 
