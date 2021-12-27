@@ -22,6 +22,7 @@ def search(df,name,**kwargs):
         rus = False
         
     #Now the function
+    df_cols_orig = list(df.columns)
     if not case:
         df_cols = [col.lower() for col in df.columns] #Make them lower case for easier checking
         name = name.lower() #Make the searched field lower case
@@ -30,8 +31,10 @@ def search(df,name,**kwargs):
     if rus:
         df_cols = [col.replace('_','') for col in df.columns]
     
-    cols = [col for col in df_cols if name in col]
+    mapping = dict(zip(df_cols,df_cols_orig))
     
+    cols = [mapping[col] for col in df_cols if name in col]
+
     return cols
 
 if __name__ == '__main__':
