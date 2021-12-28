@@ -14,7 +14,7 @@ pip install -e git+https://github.com/whc30/pysearch#egg=pysearch
 pysearch.search(it,name,**kwargs)
 ```
 #### **Arguments**
-- **it**: The python iterable that you wish to search. The only requirement
+- **it**: The python iterable that you wish to search. The only requirement is that ```list(it)``` is defined.
 - **name**: The string name that you wish to search for.
 - **kwargs**:
     - **case**: Boolean, whether you wish to do a case-sensitive search or not (default=False)
