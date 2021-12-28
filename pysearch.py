@@ -40,13 +40,3 @@ def search(it,name,**kwargs):
     names = [mapping[x] for x in it_names if name in x]
 
     return names
-
-
-if __name__ == '__main__':
-    import pandas as pd
-
-    df = pd.DataFrame({'A':[1,2,3],'b':[2,3,4],'ab3':[55,55,33]})
-    print(search(df,'a'))
-
-    listt = ['a','b','veg']
-    print(search(listt,'v'))
