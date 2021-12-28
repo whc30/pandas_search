@@ -28,10 +28,10 @@ def search(it,name,**kwargs):
         
     #Now the function
     if not case:
-        it_names = [x.lower() for x in it_names_orig] #Make them lower case for easier checking
+        it_names = [x.lower() for x in it_names_orig_str] #Make them lower case for easier checking
         name = name.lower() #Make the searched field lower case
     else:
-        it_names = [x for x in it_names_orig]
+        it_names = [x for x in it_names_orig_str]
     if rus:
         it_names = [x.replace('_','') for x in it_names]
     
