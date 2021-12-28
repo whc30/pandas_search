@@ -1,23 +1,26 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
-VERSION = '0.0.1' 
-DESCRIPTION = 'Search for Pandas dataframe columns'
-LONG_DESCRIPTION = 'Search Pandas dataframe columns for a specified name'
+VERSION = '0.1.0' 
+DESCRIPTION = 'Search function for python iterable'
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    LONG_DESCRIPTION = fh.read()
 
 # Setting up
 setup(
-        name="pdsearch", 
+        name="pysearch", 
         version=VERSION,
-        author="Will Clare",
+        author="William Henry Clare",
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
-        packages=find_packages(),
-        install_requires=['pandas'],
+        long_description_content_type="text/markdown",
+        url="https://github.com/whc30/pysearch",
+        install_requires=[],
         
-        keywords=['python', 'pandas'],
+        keywords=['python'],
         classifiers= [
-            "Programming Language :: Python :: 2",
             "Programming Language :: Python :: 3",
-            "Operating System :: Microsoft :: Windows",
+            "License :: OSI Approved :: MIT License",
+            "Operating System :: OS Independent",
         ]
 )

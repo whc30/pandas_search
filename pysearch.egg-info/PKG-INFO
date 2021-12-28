@@ -1,3 +1,18 @@
+Metadata-Version: 2.1
+Name: pysearch
+Version: 0.1.0
+Summary: Search function for python iterable
+Home-page: https://github.com/whc30/pysearch
+Author: William Henry Clare
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
 # PySearch
 
 This is a simple package for searching a python iterable for key-words. It works on any object ```x``` for which ```list(x)``` is defined, including lists, dictionaries, sets, and pandas dataframes.
@@ -110,3 +125,5 @@ table1[search(table1,'b')]
 </div>
 
 More examples can be found in the examples .ipynb file.
+
+

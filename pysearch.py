@@ -1,14 +1,18 @@
 
 
-#TODO - change name and docs to make more general - this can apply for any object
 def search(it,name,**kwargs):
     '''Search an iterable `it` for name `name`. This is commonly used to search the columns of Pandas DataFrames.
     Toggle case-sensitivity with `case` (default=False).
     Toggle removing underscores with `remove_us` (default=False).'''
 
-    #Check input types
+    #Initial setup
     it_names_orig = list(it)
+    try:
+        it_names_orig_str = [str(x) for x in it_names_orig]
+    except:
+        raise TypeError("Elements must be either strings or able to become strings through str() function. This failed in this case.")
 
+    #Check input types
     try:
         name = str(name)
     except:
@@ -24,18 +28,19 @@ def search(it,name,**kwargs):
         
     #Now the function
     if not case:
-        it_names = [col.lower() for col in it_names_orig] #Make them lower case for easier checking
+        it_names = [x.lower() for x in it_names_orig] #Make them lower case for easier checking
         name = name.lower() #Make the searched field lower case
     else:
-        it_names = [col for col in it_names_orig]
+        it_names = [x for x in it_names_orig]
     if rus:
-        it_names = [col.replace('_','') for col in it_names]
+        it_names = [x.replace('_','') for x in it_names]
     
     mapping = dict(zip(it_names,it_names_orig)) #A mapping for referring back to the original
     
-    names = [mapping[col] for col in it_names if name in col]
+    names = [mapping[x] for x in it_names if name in x]
 
     return names
+
 
 if __name__ == '__main__':
     import pandas as pd

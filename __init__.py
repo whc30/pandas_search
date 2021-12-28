@@ -1,1 +1,1 @@
-from pdsearch import search
+from pysearch import search

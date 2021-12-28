@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+pysearch.egg-info/PKG-INFO
+pysearch.egg-info/SOURCES.txt
+pysearch.egg-info/dependency_links.txt
+pysearch.egg-info/top_level.txt
