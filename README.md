@@ -77,9 +77,7 @@ table1
 search(table1,'b')
 ```
 
-```python
-['Banana']
-```
+```['Banana']```
 
 **Note** that we can index the dataframe by this output:
 ```python
